@@ -38,6 +38,13 @@ def list_comu (llista1, llista2):
     """
     Escriu una funció que donades dues llistes imprimeixi els elements que tinguin en comú.
     
+    >>> llista1 = [1, 2, 3, 4, 5]
+    >>> llista2 = [3, 4, 5, 6, 7]
+    >>> list_comu (llista1, llista2)
+    Els elements en comú són:
+    3
+    4
+    5
     """
     comuns1 = set(llista1)
     comuns2 = set(llista2)
