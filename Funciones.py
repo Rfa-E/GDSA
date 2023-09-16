@@ -72,7 +72,7 @@ def distancia (punt1, punt2):
     # Teorema de Pitàgores per calcular la distància
     return ((punt1[0] - punt2[0]) ** 2 + (punt1[1] - punt2[1]) ** 2) ** 0.5
 
-def T_triangle ():
+def t_Triangle ():
     """
     5. Escriu una funció que demani a l'usuari 3 punts per formar un triangle i retorni el tipus de triangle format.
     """
