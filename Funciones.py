@@ -16,7 +16,7 @@ def parell_senar ():
             else:
                 print(f"{numero} es senar.")
                 
-def num_mayor ():
+def nMayor ():
     """
     2. Escriu una funció que demani a l'usuari una llista de números i que torni el número més gran d'aquesta.
     """
@@ -56,7 +56,7 @@ def list_comu (llista1, llista2):
         for numero in comuns:
             print(numero)
 
-def esPrimo(numero):
+def esPrimo (numero):
     """
     4. La funcion devuelve `True` si su argumento es primo, y `False` si no lo es.
     
@@ -76,9 +76,9 @@ def T_triangle ():
     """
     5. Escriu una funció que demani a l'usuari 3 punts per formar un triangle i retorni el tipus de triangle format.
     """
-    punt1 = (float(input("Introdueix la coordenada x del punt 1: ")), float(input("Introdueix la coordenada y del punt 1: ")))
-    punt2 = (float(input("Introdueix la coordenada x del punt 2: ")), float(input("Introdueix la coordenada y del punt 2: ")))
-    punt3 = (float(input("Introdueix la coordenada x del punt 3: ")), float(input("Introdueix la coordenada y del punt 3: ")))
+    punt1 = (float(input("Introdueix la x del punt 1: ")), float(input("Introdueix la y del punt 1: ")))
+    punt2 = (float(input("Introdueix la x del punt 2: ")), float(input("Introdueix la y del punt 2: ")))
+    punt3 = (float(input("Introdueix la x del punt 3: ")), float(input("Introdueix la y del punt 3: ")))
     # Calculem les distàncies
     dist1 = distancia(punt1, punt2)
     dist2 = distancia(punt2, punt3)
@@ -91,7 +91,7 @@ def T_triangle ():
     else:
         return "Triangle escale"
     
-def factorial(num):
+def factorial (num):
     """
     6. Escriu una funció que calculi el factorial d'un número.
 
