@@ -4,7 +4,7 @@
 
 def parell_senar ():
     """
-    Escriu una funció en el que l'usuari va introduint números i es va dient si el número és parell o senar. El programa acaba quan s'introdueix un zero.
+    1. Escriu una funció en el que l'usuari va introduint números i es va dient si el número és parell o senar. El programa acaba quan s'introdueix un zero.
     """
     while True:
             numero = int(input("Introdueix un número: "))
@@ -18,7 +18,7 @@ def parell_senar ():
                 
 def num_mayor ():
     """
-    Escriu una funció que demani a l'usuari una llista de números i que torni el número més gran d'aquesta.
+    2. Escriu una funció que demani a l'usuari una llista de números i que torni el número més gran d'aquesta.
     """
     llista = []
     while True:
@@ -36,7 +36,7 @@ def num_mayor ():
             
 def list_comu (llista1, llista2):
     """
-    Escriu una funció que donades dues llistes imprimeixi els elements que tinguin en comú.
+    3. Escriu una funció que donades dues llistes imprimeixi els elements que tinguin en comú.
     
     >>> llista1 = [1, 2, 3, 4, 5]
     >>> llista2 = [3, 4, 5, 6, 7]
@@ -58,7 +58,7 @@ def list_comu (llista1, llista2):
 
 def esPrimo(numero):
     """
-    La funcion devuelve `True` si su argumento es primo, y `False` si no lo es.
+    4. La funcion devuelve `True` si su argumento es primo, y `False` si no lo es.
     
     >>> [ numero for numero in range(2, 50) if esPrimo(numero) ]
     [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47]
@@ -74,7 +74,7 @@ def distancia (punt1, punt2):
 
 def T_triangle ():
     """
-    Escriu una funció que demani a l'usuari 3 punts per formar un triangle i retorni el tipus de triangle format.
+    5. Escriu una funció que demani a l'usuari 3 punts per formar un triangle i retorni el tipus de triangle format.
     """
     punt1 = (float(input("Introdueix la coordenada x del punt 1: ")), float(input("Introdueix la coordenada y del punt 1: ")))
     punt2 = (float(input("Introdueix la coordenada x del punt 2: ")), float(input("Introdueix la coordenada y del punt 2: ")))
@@ -90,6 +90,24 @@ def T_triangle ():
         return "Triangle isosceles"
     else:
         return "Triangle escale"
+    
+def factorial(num):
+    """
+    6. Escriu una funció que calculi el factorial d'un número.
+
+    >>> numero = 4
+    >>> resultat = factorial(numero)
+    El factorial de 4 és 24
+    """
+    if num < 0:
+        return "El factorial no està definit per a números negatius."
+    elif num == 0 or num == 1:
+        return 1
+    else:
+        fact = 1
+        for numero in range(2, num + 1):
+            fact *= numero
+        return print(f"El factorial de {numero} és {fact}")    
             
 
 import doctest
