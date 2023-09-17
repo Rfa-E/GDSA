@@ -112,6 +112,7 @@ def factorial (num):
 def mVocals(frase):
     """
     7. Escriu una funció que donada una frase canviï totes les vocals per '*'
+    
     >>> frase = "Hola mi nombre es Rafa"
     >>> mVocals(frase)
     H*l* m* n*mbr* *s R*f*
@@ -126,6 +127,16 @@ def mVocals(frase):
             mod_frase += char
     return print(mod_frase)    
     
+def combi(llista1, llista2):
+    """
+    8. Escriu una funció que donades dues llistes, les combini sense duplicat si els elements estiguin ordenats.
+    
+    >>> llista1 = [1, 3, 5, 7, 9]
+    >>> llista2 = [3, 4, 5, 8, 10]
+    >>> resultat = combi(llista1, llista2)
+    [1, 3, 4, 5, 7, 8, 9, 10]
+    """
+    return print(sorted(list(set(llista1 + llista2))))
 
 import doctest
 
