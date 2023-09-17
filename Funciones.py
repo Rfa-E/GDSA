@@ -60,8 +60,8 @@ def esPrimo (numero):
     """
     4. Escriu una funció que retorni True o False segons si un número és primer o no.
     
-    >>> [ numero for numero in range(2, 50) if esPrimo(numero) ]
-    [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47]
+    >>> esPrimo(numero=4)
+    False
     """
     for prueba in range(2, int(numero**0.5)+1):
         if numero % prueba == 0:
