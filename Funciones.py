@@ -58,7 +58,7 @@ def list_comu (llista1, llista2):
 
 def esPrimo (numero):
     """
-    4. La funcion devuelve `True` si su argumento es primo, y `False` si no lo es.
+    4. Escriu una funció que retorni True o False segons si un número és primer o no.
     
     >>> [ numero for numero in range(2, 50) if esPrimo(numero) ]
     [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47]
@@ -108,7 +108,24 @@ def factorial (num):
         for numero in range(2, num + 1):
             fact *= numero
         return print(f"El factorial de {numero} és {fact}")    
-            
+
+def mVocals(frase):
+    """
+    7. Escriu una funció que donada una frase canviï totes les vocals per '*'
+    >>> frase = "Hola mi nombre es Rafa"
+    >>> mVocals(frase)
+    H*l* m* n*mbr* *s R*f*
+    """
+    vocals = "AEIOUaeiou"
+    mod_frase = ""
+    
+    for char in frase:
+        if char in vocals:
+            mod_frase += "*"
+        else:
+            mod_frase += char
+    return print(mod_frase)    
+    
 
 import doctest
 
